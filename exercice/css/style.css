@@ -1,0 +1,39 @@
+body{
+    background-color: azure;
+    width: 100%;
+}
+
+h1{
+    font-size: 4em;
+    color: rgb(94, 55, 55);
+    text-align: center;
+}
+
+img{
+    width: 15%;
+}
+
+#tabScore{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#player{
+    text-align: center;
+    width: 25%;
+}
+
+#middle{
+    width: 50%;
+    text-align: center;
+}
+
+#pc{
+    text-align: center;
+    width: 25%;
+}
+
+
+
