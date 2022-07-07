@@ -1,6 +1,6 @@
 "use strict";
 
-let choixUtilisateur = prompt("Quelle valeur choisissez-vous ? Pierre, feuille ou ciseaux");
+let choixUtilisateur = document.querySelector('img')
 
 
 choixUtilisateur = choixUtilisateur.toLowerCase();
@@ -25,37 +25,41 @@ switch(ordi){
         break;
 }
 
-
-if(choixUtilisateur == choixOrdi){
-    document.write("Vous êtes à égalité !")
-}else{ 
-    switch(choixUtilisateur){
-        case "pierre":
-            if(choixOrdi == "feuille"){
-                //Ajout de texte brute
-                document.write("L'ordinateur a choisi feuille donc ordi à gagné !")
-            }
-            else{
-                document.write("L'ordinateur a choisi ciseaux donc ordi à perdu !" )
-            }     
-            break;
-        case 'feuille':
-            if(choixOrdi == 'pierre'){
-                document.write("l'ordi a choisi pierre donc ordi a perdu")
-            }else{
-                document.write("l'ordi a choisi ciseaux donc ordi gagne")
-            }
-            break;
-        case 'ciseaux':
-            if(choixOrdi == 'pierre'){
-                document.write("l'ordi a choisi pierre donc ordi a gagné")
-            }else{
-                document.write("l'ordi a choisi feuille donc ordi a perdu")
-            }
-            break;
+function shifumi(){
+    if(choixUtilisateur == choixOrdi){
+        document.write("Vous êtes à égalité !")
+    }else{ 
+        switch(choixUtilisateur){
+            case "pierre":
+                if(choixOrdi == "feuille"){
+                    //Ajout de texte brute
+                    document.write("L'ordinateur a choisi feuille donc ordi à gagné !")
+                }
+                else{
+                    document.write("L'ordinateur a choisi ciseaux donc ordi à perdu !" )
+                }     
+                break;
+            case 'feuille':
+                if(choixOrdi == 'pierre'){
+                    document.write("l'ordi a choisi pierre donc ordi a perdu")
+                }else{
+                    document.write("l'ordi a choisi ciseaux donc ordi gagne")
+                }
+                break;
+            case 'ciseaux':
+                if(choixOrdi == 'pierre'){
+                    document.write("l'ordi a choisi pierre donc ordi a gagné")
+                }else{
+                    document.write("l'ordi a choisi feuille donc ordi a perdu")
+                }
+                break;
+        }
     }
 }
 
-choixUtilisateur = document.querySelector('img');
+const img = document.querySelector('img')
+img.onclick = () => {
+  console.log('clicked')
+}
 
 

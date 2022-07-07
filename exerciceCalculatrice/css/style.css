@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    background: rgb(4, 186, 183);
+}
+
+h1{
+    font-size: 4em;
+}
+
+p{
+    margin: 25px 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    color: rgb(94, 69, 152);
+}
+
+div{
+    width: 100%;
+    margin: 10px auto 10px;
+}
+
+#nbr1{
+    margin-bottom: 10px;
+}
+
+input{
+    width: 5%;
+}
+
+button{
+    width: 3%;
+    background-color: rgb(37, 108, 162);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+button:hover{
+    background: rgb(217, 12, 12);
+    color: black;
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+#egal{
+    margin-top: 10px 0 20px;
+}
+
+#result{
+    margin-top: 10px;
+    width: 10%;
+}
