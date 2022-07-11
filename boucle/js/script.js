@@ -131,3 +131,14 @@ let haut = prompt("Veuillez maintenant préciser la hauteur");
 
 // Rappel de la fonction avec les variables choisies par l'utilisateur
 testColis(long, larg, haut);
+
+// Exemple de la boucle WHILE
+
+let compteur = 0;
+// Création du compteur en dehors de la boucle
+
+while(compteur < 10){
+    console.log(compteur);
+    compteur++
+    // Attention on n'oublie pas de faire l'incrémentation pour ne pas faire une boucle infinie
+}

@@ -11,6 +11,7 @@ for (let i = 0; i < nomLiens.length; i++){ // Pour i = 0; faire un boucle pour i
     a[i].setAttribute("target", "_blank");
 }
 
+
 // a = document.querySelectorAll('a');
 // for(let i = 0; i < liens.length; i++){
 //     a[i].setAttribute("href", liens[i]);

@@ -33,38 +33,51 @@
 //     }
 // });
 
-function test(){
-    let nbr1 = parseFloat(document.querySelector('#nbr1').value);
-    let nbr2 = parseFloat(document.querySelector('#nbr2').value);
-    let selec = document.querySelector('#ope').value;
-    let result = document.querySelector('#result');
-    console.log(nbr1);
-    console.log(typeof nbr1);
-    console.log(nbr2);
-    console.log(typeof nbr2);
-    console.log(selec);
+// function test(){
+//     let nbr1 = parseFloat(document.querySelector('#nbr1').value);
+//     let nbr2 = parseFloat(document.querySelector('#nbr2').value);
+//     let selec = document.querySelector('#ope').value;
+//     let result = document.querySelector('#result');
+//     console.log(nbr1);
+//     console.log(typeof nbr1);
+//     console.log(nbr2);
+//     console.log(typeof nbr2);
+//     console.log(selec);
 
-    if(selec == "addition"){
-            result.setAttribute('value', nbr1 + nbr2);
-            console.log(result);
+//     if(selec == "addition"){
+//             result.setAttribute('value', nbr1 + nbr2);
+//             console.log(result);
+//     }
+//     if(selec == 'soustraction'){
+//             result.setAttribute('value', nbr1 - nbr2);
+//             console.log(result);
+//     }
+//     if(selec == 'multiplication'){
+//             result.setAttribute('value', nbr1 * nbr2);
+//             console.log(result);
+//     }
+//     if(selec == 'division'){
+//         if(nbr2 == 0){
+//             result.value = 'impossible';
+//         }else{
+//             result.setAttribute('value', nbr1 / nbr2);
+//             console.log(result);
+//         }
+//     } 
+// }
+
+// let egal = document.querySelector('#egal');
+// egal.addEventListener("click", test);
+
+
+function egal(){
+    let btn = document.querySelectorAll('button');
+    let btnValue = btn.value;
+    for(let i = 0; i < btn.length; i++){
+        btnValue[i] = btn[i];
+        console.log(btnValue);
     }
-    if(selec == 'soustraction'){
-            result.setAttribute('value', nbr1 - nbr2);
-            console.log(result);
-    }
-    if(selec == 'multiplication'){
-            result.setAttribute('value', nbr1 * nbr2);
-            console.log(result);
-    }
-    if(selec == 'division'){
-        if(nbr2 == 0){
-            result.value = 'impossible';
-        }else{
-            result.setAttribute('value', nbr1 / nbr2);
-            console.log(result);
-        }
-    } 
 }
 
-let egal = document.querySelector('#egal');
-egal.addEventListener("click", test);
+let btn = document.querySelector('button');
+btn.addEventListener("click", egal);
