@@ -11,4 +11,4 @@ function miniAnimation(){
     }
 }
 
-let timer = window.setInterval("miniAnimation()", 1000)
+let timer = window.setInterval("miniAnimation()", 1000);

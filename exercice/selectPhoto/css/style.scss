@@ -1,0 +1,35 @@
+$photo: red;
+$selected: forestgreen;
+
+body{
+    margin: 0 auto;
+    width: 90%;
+}
+
+em{
+    color: $photo;
+    font-weight: bold;
+}
+
+#photo-list{
+    width: 800px;
+    display: flex;
+    padding-left: 0;
+
+    li{
+        display: inline-block;
+        list-style-type: none;
+        margin: 1em;
+        padding: 0.5px;
+        border-radius: 8px;
+        transition: background-color 0.5s;
+    }
+
+    li:hover{
+        background-color: silver;
+    }
+
+    li.selected{
+        background-color: $selected;
+    }
+}

@@ -76,6 +76,9 @@ function egal(){
     for(let i = 0; i < btn.length; i++){
         btnValue[i] = btn[i];
         console.log(btnValue);
+        if(btnValue[i] == [i]){
+            btn[i] = [i]
+        }
     }
 }
 
